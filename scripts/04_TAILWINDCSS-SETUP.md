@@ -32,23 +32,31 @@ module.exports = {
 @tailwind utilities;
 ```
 
-## Deletion of the `styles` object from `pages/index.tsx` (mainly the whole `class` attribute like below:
+## Deletion of the default HTML Code from `src/App.tsx` and replace it with empty `<section></section>` Tag
 
 1. Change 👇
 
 ```html
-<div className="{ styles.container }"ren></div>
+<div className="App">
+  <header className="App-header">
+    <img src={logo} className="App-logo" alt="logo" />
+    <p>
+      Edit <code>src/App.tsx</code> and save to reload.
+    </p>
+    <a
+      className="App-link"
+      href="https://reactjs.org"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Learn React
+    </a>
+  </header>
+</div>
 ```
 
 to 👇
 
 ```html
 <section></section>
-```
-
-2. Remove `<main></main>` tag block and `<footer></footer>` tag block
-
-```html
-<main></main>
-<footer></footer>
 ```
